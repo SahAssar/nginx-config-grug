@@ -1,0 +1,9 @@
+[Unit]
+Description=nginx config generation and reload
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl reload-or-try-restart nginx
+
+[Install]
+WantedBy=multi-user.target
