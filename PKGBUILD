@@ -13,7 +13,6 @@ provides=()
 conflicts=()
 install="script.install"
 package() {
-  cd ../
   depends+=(nginx)
   depends+=(nginx-mod-brotli)
   depends+=(nginx-mod-njs)
